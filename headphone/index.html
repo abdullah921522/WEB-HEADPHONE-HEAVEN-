@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave Elite | Professional Audio Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <!-- Replace logo.png with your actual file path -->
+                    <img src="logo.png" alt="SoundWave Elite" class="main-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="logo-fallback">Sound<span>Wave</span></span>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">The Gallery</a></li>
+                    <li><a href="#shop">Collection</a></li>
+                    <li><a href="#categories">Our Brands</a></li>
+                    <li><a href="#contact">Concierge</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button class="icon-btn cart-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="icon-btn mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Professional Hero Slider -->
+        <section id="home" class="main-slider">
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1600');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="slide-subtitle">Al Hamd Series</span>
+                        <h2 class="slide-title">Heritage of Purity</h2>
+                        <p class="slide-desc">Experience the pinnacle of traditional sound engineering with Al Hamd Signature Series.</p>
+                        <a href="#shop" class="btn btn-copper">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&q=80&w=1600');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="slide-subtitle">Ronin Wireless</span>
+                        <h2 class="slide-title">Defy Boundaries</h2>
+                        <p class="slide-desc">Unleash pure freedom with Ronin's crystal-clear wireless technology. Zero lag, zero limits.</p>
+                        <a href="#shop" class="btn btn-copper">Discover Ronin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&q=80&w=1600');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <span class="slide-subtitle">Logitech Pro</span>
+                        <h2 class="slide-title">Pro-Grade Precision</h2>
+                        <p class="slide-desc">Engineered for perfection. Logitech G Pro X brings the studio to your gaming rig.</p>
+                        <a href="#shop" class="btn btn-copper">Shop Logitech</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-nav">
+                <span class="slider-dot active"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section id="shop" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">The Curated Boutique</span>
+                    <h2>Exceptional Pieces</h2>
+                </div>
+                <div class="product-grid" id="product-container">
+                    <!-- Products injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Showcase -->
+        <section id="categories" class="brands-showcase">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Our Partners</span>
+                    <h2>Iconic Engineering</h2>
+                </div>
+                <div class="brand-list">
+                    <div class="brand-item">
+                        <h3>Al Hamd</h3>
+                        <div class="line"></div>
+                    </div>
+                    <div class="brand-item">
+                        <h3>Ronin</h3>
+                        <div class="line"></div>
+                    </div>
+                    <div class="brand-item">
+                        <h3>Logitech</h3>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Newsletter -->
+        <section id="contact" class="newsletter">
+            <div class="container newsletter-box">
+                <div class="newsletter-inner">
+                    <span class="subtitle">Exclusive Access</span>
+                    <h2>The Inner Circle</h2>
+                    <p>Subscribers receive priority access to limited Al Hamd releases.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your professional email" required>
+                        <button type="submit" class="btn btn-copper">Request Invitation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <a href="#">Sound<span>Wave</span></a>
+                </div>
+                <p class="brand-bio">Curating Pakistan's most exclusive audio collection. We bring the world's finest sound engineering from Al Hamd, Ronin, and Logitech to your doorstep.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#shop">Al Hamd Signature</a></li>
+                    <li><a href="#shop">Ronin Wireless</a></li>
+                    <li><a href="#shop">Logitech Pro G</a></li>
+                    <li><a href="#shop">Limited Editions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Boutique</h4>
+                <ul>
+                    <li><a href="#">Our Heritage</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Concierge</h4>
+                <p>Mon - Sat: 10:00 - 20:00</p>
+                <p class="contact-detail">support@soundwave-elite.com</p>
+                <p class="contact-detail">+92 300 123 4567</p>
+                <p class="location-detail">Gulberg III, Lahore, Pakistan</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-flex">
+                    <p>&copy; 2024 SoundWave Elite. Pakistan's Premier Audio Destination.</p>
+                    <div class="payment-icons">
+                        <span>EasyPaisa</span>
+                        <span>JazzCash</span>
+                        <span>Bank Transfer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Selection</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-list"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">Rs. 0</span>
+            </div>
+            <button class="btn btn-copper btn-block">Checkout</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
